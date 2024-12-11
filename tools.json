@@ -1,1 +1,10 @@
-[]
+[
+  [],
+  {
+    "toolName": "ag - the silver searcher",
+    "commands": [
+      "sudo apt install -y silversearcher-ag",
+      ""
+    ]
+  }
+]
