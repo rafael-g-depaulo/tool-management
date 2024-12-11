@@ -5,5 +5,13 @@
       "sudo apt install -y silversearcher-ag",
       ""
     ]
+  },
+  {
+    "toolName": "nnn",
+    "commands": [
+      "sudo apt install -y nnn",
+      "sudo apt update",
+      ""
+    ]
   }
 ]
