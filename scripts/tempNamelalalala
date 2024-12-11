@@ -17,5 +17,5 @@ cat tools.json |
 	jq -s \
 		--argjson COMMANDS "$COMMANDS" \
 		--arg TOOL_NAME "$TOOL_NAME" \
-		'. + [{ toolName: $TOOL_NAME, commands: $COMMANDS }]' |
+		'.[] + [{ toolName: $TOOL_NAME, commands: $COMMANDS }]' |
 	tee tools.json &>/dev/null
