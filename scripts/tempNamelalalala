@@ -1,0 +1,21 @@
+#!/bin/zsh
+
+# # use right node version
+# nvm use
+
+if [ ! -d dist ]; then
+	yarn build
+fi
+
+./scripts/callNodeScript prompter
+
+# TOOL_NAME=$(cat /tmp/tool-management-prompter.json | jq -r '.toolName')
+TOOL_NAME=$(jq -r '.toolName' /tmp/tool-management-prompter.json)
+COMMANDS=$(./scripts/selectCommands.sh | jq --raw-input --slurp 'split("\n")')
+
+cat tools.json |
+	jq -s \
+		--argjson COMMANDS "$COMMANDS" \
+		--arg TOOL_NAME "$TOOL_NAME" \
+		'. + [{ toolName: $TOOL_NAME, commands: $COMMANDS }]' |
+	tee tools.json &>/dev/null

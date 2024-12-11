@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ ! -d dist ]; then
+	echo "Either project hasn't been built or you're not running from the root folder..."
+	exit 1
+fi
+
+node -r ./.pnp.cjs "./dist/$1.js"
