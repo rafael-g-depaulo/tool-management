@@ -14,9 +14,3 @@ The following are the cli tools that need to already be installed for the projec
 | fzf | fuzzy finder used to select the commands to include as the tool's instalation process |
 | jq | used to parse and create the .json files used by the scripts |
 | nvm (optional) | recommended to set node version by having nvm installed and calling `nvm use` in the root project directory |
-
-TODOS:
-
-- [ ] rename files
-- [ ] add script to install deps
-- [ ] add script to install tools following tools.json

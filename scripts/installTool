@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# TOOL_NAME=$(jq -r '.[] | [(.toolName), (.commands | join("\n") | @sh) ] | @tsv' <<<"$1")
+
+TOOL_NAME=$1
+TOOL_COMMANDS_ESCAPED=$2
+TOOL_COMMANDS_UNESCAPED=$(printf '%b\n' "${TOOL_COMMANDS_ESCAPED:1:${#TOOL_COMMANDS_ESCAPED}-2}")
+
+# strip the '' quotes that
+
+echo "Installing tool \"$TOOL_NAME\"..."
+/bin/bash <(echo "$TOOL_COMMANDS_UNESCAPED")
