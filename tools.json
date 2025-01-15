@@ -56,5 +56,66 @@
       "sudo apt install i3\\",
       ""
     ]
+  },
+  {
+    "toolName": "polybar",
+    "commands": [
+      "sudo apt install polybar -y",
+      ""
+    ]
+  },
+  {
+    "toolName": "polybar-stuff",
+    "commands": [
+      "sudo apt install polybar -y",
+      "mkdir -p ~/logs",
+      "sudo apt install radeontop -y",
+      "sudo apt install lm-sensors -y",
+      ""
+    ]
+  },
+  {
+    "toolName": "i3-helpers",
+    "commands": [
+      "sudo apt install -y nitrogen picom",
+      ""
+    ]
+  },
+  {
+    "toolName": "app-opener",
+    "commands": [
+      "sudo apt install -y jgmenu",
+      ""
+    ]
+  },
+  {
+    "toolName": "speedtest-cli",
+    "commands": [
+      "sudo apt install -y speedtest-cli",
+      ""
+    ]
+  },
+  {
+    "toolName": "app-runner",
+    "commands": [
+      "sudo apt install -y jgmenu",
+      "sudo apt install -y rofi",
+      "sudo apt install -y pavucontrol",
+      ""
+    ]
+  },
+  {
+    "toolName": "play-button-controller",
+    "commands": [
+      "sudo apt install -y playerctl",
+      ""
+    ]
+  },
+  {
+    "toolName": "screenshot",
+    "commands": [
+      "sudo apt install -y gnome-screenshot",
+      ""
+    ]
   }
 ]
