@@ -126,5 +126,36 @@
       "sudo apt install -y awscli",
       ""
     ]
+  },
+  {
+    "toolName": "aws cli",
+    "commands": [
+      "gh extension install https://github.com/nektos/gh-act\\",
+      ""
+    ]
+  },
+  {
+    "toolName": "act",
+    "commands": [
+      "gh extension install https://github.com/nektos/gh-act\\",
+      ""
+    ]
+  },
+  {
+    "toolName": "",
+    "commands": [
+      "",
+      ""
+    ]
+  },
+  {
+    "toolName": "insomnia",
+    "commands": [
+      "update",
+      "wget -O /tmp/insomnia.deb https://updates.insomnia.rest/downloads/ubuntu/latest\\?\\&app\\=com.insomnia.app\\&source\\=website",
+      "sudo dpkg -i /tmp/insomnia.deb",
+      "update",
+      ""
+    ]
   }
 ]
