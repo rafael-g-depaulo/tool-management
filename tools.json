@@ -171,5 +171,12 @@
       "sudo apt update && sudo apt install beekeeper-studio -y",
       ""
     ]
+  },
+  {
+    "toolName": "sag/sack - (s)hortcut ag/ack",
+    "commands": [
+      "git clone https://github.com/sampson-chen/sack.git && cd sack && chmod +x install_sack.sh && ./install_sack.sh && cd .. && rm -rf sack",
+      ""
+    ]
   }
 ]
