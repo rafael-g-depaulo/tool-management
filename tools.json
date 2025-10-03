@@ -185,5 +185,16 @@
       "brew install yq",
       ""
     ]
+  },
+  {
+    "toolName": "sack - shortcut ag/ack",
+    "commands": [
+      "git clone https://github.com/sampson-chen/sack.git /tmp/sack",
+      "cd /tmp/sack/",
+      "chmod +x install_sack.sh",
+      "./install_sack.sh",
+      "mv ~/bin/** ~/.local/bin",
+      ""
+    ]
   }
 ]
