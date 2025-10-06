@@ -196,5 +196,14 @@
       "mv ~/bin/** ~/.local/bin",
       ""
     ]
+  },
+  {
+    "toolName": "xournal++ - edit pdfs",
+    "commands": [
+      "sudo add-apt-repository ppa:apandada1/xournalpp-stable\\",
+      "sudo apt update\\",
+      "sudo apt install xournalpp\\",
+      ""
+    ]
   }
 ]
