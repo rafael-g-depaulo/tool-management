@@ -220,5 +220,13 @@
       "wget --show-progress -o /dev/null -O- 'https://raw.githubusercontent.com/hyperupcall/autoenv/main/scripts/install.sh' | sh",
       ""
     ]
+  },
+  {
+    "toolName": "pulumi cli - IaC imperative tool",
+    "commands": [
+      "curl -fsSL https://get.pulumi.com | sh",
+      "export PATH=\"$PATH:$HOME/.pulumi/bin\"",
+      ""
+    ]
   }
 ]
