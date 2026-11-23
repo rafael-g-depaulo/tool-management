@@ -228,5 +228,14 @@
       "export PATH=\"$PATH:$HOME/.pulumi/bin\"",
       ""
     ]
+  },
+  {
+    "toolName": "fzf - from source",
+    "commands": [
+      "git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf\\",
+      "~/.fzf/install",
+      "fzf --version",
+      ""
+    ]
   }
 ]
